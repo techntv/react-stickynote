@@ -22,7 +22,7 @@ var Board = React.createClass({
     componentWillMount() {
       var self = this;
       if(this.props.count){
-          var url = `http://baconipsum.com/api/?type=all-meat&sentences=${this.props.count}`;
+          var url = `https://baconipsum.com/api/?type=all-meat&sentences=${this.props.count}`;
           var data = "";
           $.get(url)
             .then(data => data[0])
